@@ -1,0 +1,9 @@
+(executable
+ (public_name zaif)
+ (name main)
+ (libraries zaif))
+
+(env
+ (dev
+  (flags (:standard -warn-error -a)))
+)
