@@ -2,6 +2,8 @@
 
 (name zaif)
 
+(version 0.1.dev)
+
 (generate_opam_files true)
 
 (source
