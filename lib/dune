@@ -1,4 +1,5 @@
 (library
  (name zaif)
+ (public_name zaif)
  (libraries ; lwt h2 h2-lwt-unix
  cohttp cohttp-lwt-unix hacl-star yojson hex dolog))

@@ -1,5 +1,4 @@
 (executable
- (public_name zaif)
  (name main)
  (libraries zaif))
 
