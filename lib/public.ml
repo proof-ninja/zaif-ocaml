@@ -46,3 +46,8 @@ let ticker currency_pair =
   let path = !%"%s/ticker/%s" end_point currency_pair in
   get path >>= fun json ->
   Lwt.return (ticker_of_json json)
+
+let depth currency_pair =
+  let path = !%"%s/depth/%s" end_point currency_pair in
+  get path >>= fun json ->
+  Lwt.return json
