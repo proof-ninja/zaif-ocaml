@@ -21,3 +21,4 @@ module Auth = Auth
 
 module ZaifApi = ZaifApi
 module Private = Private
+module Public = Public

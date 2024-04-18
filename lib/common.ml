@@ -16,13 +16,13 @@ let list_group_by f xs =
 type side = Buy | Sell
 
 let side_of_string = function
-  | "BUY" -> Buy
-  | "SELL" -> Sell
+  | "bid" -> Buy
+  | "ask" -> Sell
   | other -> failwith (!%"Common.side_of_string: '%s'" other)
 
 let string_of_side = function
-  | Buy -> "BUY"
-  | Sell -> "SELL"
+  | Buy -> "bid"
+  | Sell -> "ask"
 
 module Log = Dolog.Log
 

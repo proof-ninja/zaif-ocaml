@@ -9,8 +9,9 @@ let make_nonce () =
   let now = Datetime.now() in
   let base_time = Datetime.from_string "2024-03-20T01:01:01" in
   (now -. base_time)
-  |> int_of_float
-  |> string_of_int
+(*  |> int_of_float
+  |> string_of_int*)
+  |> string_of_float
 
 let post auth command params =
   let nonce = make_nonce () in
